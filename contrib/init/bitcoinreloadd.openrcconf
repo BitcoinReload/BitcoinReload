@@ -1,0 +1,33 @@
+# /etc/conf.d/bitcoinreloadd: config file for /etc/init.d/bitcoinreloadd
+
+# Config file location
+#BITCOINRELOADD_CONFIGFILE="/etc/bitcoinreload/bitcoinreload.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOINRELOADD_USER)
+#BITCOINRELOADD_PIDDIR="/var/run/bitcoinreloadd"
+
+# What filename to give the pidfile
+#BITCOINRELOADD_PIDFILE="${BITCOINRELOADD_PIDDIR}/bitcoinreloadd.pid"
+
+# Where to write bitcoinreloadd data (be mindful that the blockchain is large)
+#BITCOINRELOADD_DATADIR="/var/lib/bitcoinreloadd"
+
+# User and group to own bitcoinreloadd process
+#BITCOINRELOADD_USER="bitcoinreload"
+#BITCOINRELOADD_GROUP="bitcoinreload"
+
+# Path to bitcoinreloadd executable
+#BITCOINRELOADD_BIN="/usr/bin/bitcoinreloadd"
+
+# Nice value to run bitcoinreloadd under
+#BITCOINRELOADD_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOINRELOADD_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bitcoinreloadd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOINRELOADD_SIGTERM_TIMEOUT=600

@@ -1,0 +1,7 @@
+[main]
+host = https://www.transifex.com
+
+[bitcoinreload.qt-translation-021x]
+file_filter = src/qt/locale/bitcoinreload_<lang>.ts
+source_file = src/qt/locale/bitcoinreload_en.ts
+source_lang = en
